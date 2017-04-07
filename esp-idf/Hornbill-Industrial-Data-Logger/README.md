@@ -1,4 +1,4 @@
-# esp32-aws-iot
+# esp32 aws iot Data Logger
 ESP32 template for connecting to the AWS IoT platform
 
 Please make sure you have read the [getting started guide](https://aws.amazon.com/iot/getting-started/) before trying to do anyting with this template.
