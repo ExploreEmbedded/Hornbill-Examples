@@ -23,7 +23,7 @@ TOPIC_NAME
 ```
 Above certificates needs to be stored in the file aws_iot_certificates.c as arrays. Check the file for more information.
  
-![TAG](https://exploreembedded.com/wiki/File:ESP32_AWS_IOT_Certificates.png)
+![](https://exploreembedded.com/wiki/images/b/b9/ESP32_AWS_IOT_Certificates.png)
 
 
 Please check this tutorial for setting up [AWS IOT on Amazon] (https://www.exploreembedded.com/wiki/Secure_IOT_with_AWS_and_Hornbill_ESP32)
