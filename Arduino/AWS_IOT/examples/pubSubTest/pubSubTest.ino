@@ -3,11 +3,11 @@
 
 AWS_IOT hornbill;
 
-char WIFI_SSID[]="ExploreEmbedded.com";
-char WIFI_PASSWORD[]="9632083055";
-char HOST_ADDRESS[]="a3jzsmkecjw9hn.iot.us-west-2.amazonaws.com";
-char CLIENT_ID[]= "hornbill";
-char TOPIC_NAME[]= "$aws/things/myTestThing/shadow/update";
+char WIFI_SSID[]="your Wifi SSID";
+char WIFI_PASSWORD[]="Wifi Password";
+char HOST_ADDRESS[]="AWS host address";
+char CLIENT_ID[]= "client id";
+char TOPIC_NAME[]= "your thing/topic name";
 
 
 int status = WL_IDLE_STATUS;
