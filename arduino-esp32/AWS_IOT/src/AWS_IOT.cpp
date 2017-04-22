@@ -102,7 +102,7 @@ void disconnectCallbackHandler(AWS_IoT_Client *pClient, void *data)
     else
     {
         ESP_LOGW(TAG, "Auto Reconnect not enabled. Starting manual reconnect...");
-        rc = aws_iot_mqtt_attempt_reconnect(pClient);
+      //  rc = aws_iot_mqtt_attempt_reconnect(pClient);
         if(NETWORK_RECONNECTED == rc) {
             ESP_LOGW(TAG, "Manual Reconnect Successful");
         } 
@@ -177,11 +177,11 @@ int AWS_IOT::connect(char *hostAddress, char *clientID)
      *  #AWS_IOT_MQTT_MIN_RECONNECT_WAIT_INTERVAL
      *  #AWS_IOT_MQTT_MAX_RECONNECT_WAIT_INTERVAL
      */
-    rc = aws_iot_mqtt_autoreconnect_set_status(&client, true);
+  /*  rc = aws_iot_mqtt_autoreconnect_set_status(&client, true);
     if(SUCCESS != rc) {
         ESP_LOGE(TAG, "Unable to set Auto Reconnect to true - %d", rc);
         abort();
-    }    
+    } */   
     
     if(rc == SUCCESS)
     xTaskCreatePinnedToCore(&aws_iot_task, "aws_iot_task", stack_size, NULL, 5, NULL, 1);
