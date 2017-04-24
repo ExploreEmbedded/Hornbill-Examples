@@ -1,5 +1,6 @@
 /*
- * Hornbill Industrial Data logger (Temp and Current )
+ * For detailed tutorial on building the project visit:
+ * https://exploreembedded.com/wiki/Building_a_Frivolous_Internet_Connected_Display_with_ESP32
  *
 
  * Reference links:
