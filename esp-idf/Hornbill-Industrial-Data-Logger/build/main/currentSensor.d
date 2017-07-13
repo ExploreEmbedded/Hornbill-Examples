@@ -1,5 +1,5 @@
 currentSensor.o: \
- F:/GitHub/Wireless/exploreEmbedded/DataLoggerIOT/main/currentSensor.c \
+ F:/GitHub/Wireless/Hornbill-Examples/esp-idf/Hornbill-Industrial-Data-Logger/main/currentSensor.c \
  F:/GitHub/Wireless/esp-idf/components/newlib/include/stdio.h \
  F:/GitHub/Wireless/esp-idf/components/newlib/include/_ansi.h \
  F:/GitHub/Wireless/esp-idf/components/newlib/include/newlib.h \
@@ -21,7 +21,7 @@ currentSensor.o: \
  F:/GitHub/Wireless/esp-idf/components/newlib/include/stdint.h \
  F:/GitHub/Wireless/esp-idf/components/newlib/include/sys/_intsup.h \
  F:/GitHub/Wireless/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- F:/GitHub/Wireless/exploreEmbedded/DataLoggerIOT/build/include/sdkconfig.h \
+ F:/GitHub/Wireless/Hornbill-Examples/esp-idf/Hornbill-Industrial-Data-Logger/build/include/sdkconfig.h \
  F:/GitHub/Wireless/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  F:/GitHub/Wireless/esp-idf/components/esp32/include/xtensa/hal.h \
  F:/GitHub/Wireless/esp-idf/components/esp32/include/xtensa/config/core.h \
@@ -53,7 +53,7 @@ currentSensor.o: \
  F:/GitHub/Wireless/esp-idf/components/driver/include/driver/adc.h \
  F:/GitHub/Wireless/esp-idf/components/esp32/include/esp_err.h \
  F:/GitHub/Wireless/esp-idf/components/newlib/include/assert.h \
- F:/GitHub/Wireless/exploreEmbedded/DataLoggerIOT/main/currentSensor.h \
+ F:/GitHub/Wireless/Hornbill-Examples/esp-idf/Hornbill-Industrial-Data-Logger/main/currentSensor.h \
  F:/GitHub/Wireless/esp-idf/components/newlib/include/math.h
 
 F:/GitHub/Wireless/esp-idf/components/newlib/include/stdio.h:
@@ -98,7 +98,7 @@ F:/GitHub/Wireless/esp-idf/components/newlib/include/sys/_intsup.h:
 
 F:/GitHub/Wireless/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-F:/GitHub/Wireless/exploreEmbedded/DataLoggerIOT/build/include/sdkconfig.h:
+F:/GitHub/Wireless/Hornbill-Examples/esp-idf/Hornbill-Industrial-Data-Logger/build/include/sdkconfig.h:
 
 F:/GitHub/Wireless/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 
@@ -162,6 +162,6 @@ F:/GitHub/Wireless/esp-idf/components/esp32/include/esp_err.h:
 
 F:/GitHub/Wireless/esp-idf/components/newlib/include/assert.h:
 
-F:/GitHub/Wireless/exploreEmbedded/DataLoggerIOT/main/currentSensor.h:
+F:/GitHub/Wireless/Hornbill-Examples/esp-idf/Hornbill-Industrial-Data-Logger/main/currentSensor.h:
 
 F:/GitHub/Wireless/esp-idf/components/newlib/include/math.h:
