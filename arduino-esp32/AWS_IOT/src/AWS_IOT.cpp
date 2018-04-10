@@ -113,7 +113,17 @@ void disconnectCallbackHandler(AWS_IoT_Client *pClient, void *data)
 }
 
 
+int AWS_IOT::connect(char *hostAddress, char *clientID, char *aws_root_ca, char *aws_cert, char *aws_key )
+{
+    return _connect(hostAddress, clientID, aws_root_ca, aws_cert, aws_key );
+}
+
 int AWS_IOT::connect(char *hostAddress, char *clientID)
+{
+    return _connect(hostAddress, clientID, aws_root_ca_pem, certificate_pem_crt, private_pem_key );
+}
+
+int AWS_IOT::_connect(char *hostAddress, char *clientID, const char *aws_root_ca, const char *aws_cert, const char *aws_key )
 {
     const size_t stack_size = 36*1024;
     
@@ -132,17 +142,15 @@ int AWS_IOT::connect(char *hostAddress, char *clientID)
     mqttInitParams.port = CONFIG_AWS_IOT_MQTT_PORT;
 
 
-    mqttInitParams.pRootCALocation = (const char *)aws_root_ca_pem;
-    mqttInitParams.pDeviceCertLocation = (const char *)certificate_pem_crt;
-    mqttInitParams.pDevicePrivateKeyLocation = (const char *)private_pem_key;
-
+    mqttInitParams.pRootCALocation = (const char *)aws_root_ca;
+    mqttInitParams.pDeviceCertLocation = (const char *)aws_cert;
+    mqttInitParams.pDevicePrivateKeyLocation = (const char *)aws_key;
 
     mqttInitParams.mqttCommandTimeout_ms = 20000;
     mqttInitParams.tlsHandshakeTimeout_ms = 5000;
     mqttInitParams.isSSLHostnameVerify = true;
     mqttInitParams.disconnectHandler = disconnectCallbackHandler;
     mqttInitParams.disconnectHandlerData = NULL;
-
 
     rc = aws_iot_mqtt_init(&client, &mqttInitParams);
    
@@ -188,7 +196,6 @@ int AWS_IOT::connect(char *hostAddress, char *clientID)
 
     return rc;
 }
-
 
 int AWS_IOT::publish(char *pubtopic,char *pubPayLoad)
 {

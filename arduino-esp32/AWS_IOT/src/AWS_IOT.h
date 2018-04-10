@@ -35,9 +35,11 @@ typedef void (*pSubCallBackHandler_t)(char *topicName, int payloadLen, char *pay
 class AWS_IOT{
     
     private:
-    
+    int _connect(char *hostAddress, char *clientID, const char *aws_root_ca, const char *aws_cert, const char *aws_key );
+
     public:
     int connect(char *hostAddress, char *clientID);
+    int connect(char *hostAddress, char *clientID, char *aws_root_ca, char *aws_cert, char *aws_key );
     int publish(char *pubtopic,char *pubPayLoad);
     int subscribe(char *subTopic, pSubCallBackHandler_t pSubCallBackHandler);
 };
